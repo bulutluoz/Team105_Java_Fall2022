@@ -8,17 +8,19 @@ public class C10_IfElseIfStatements {
         // Cinsiyet ve yasini dikkate alarak
         // “Emekli olabilirsin” veya “Emekli olmak icin .. Yil daha calisman gerekir” yazdirin.
 
-        char cinsiyet='E';
+        char cinsiyet='k';
         int yas= 60;
 
         if (cinsiyet=='E' && yas>=65){
             System.out.println("emekli olabilirsin");
-        } else if (cinsiyet=='E' && yas<65) {
+        } else if (cinsiyet=='E' && yas<65 && yas>15) {
             System.out.println("Emekli olmak icin daha " + (65-yas) + " sene calismalisin");
         } else if (cinsiyet=='K' && yas>=60) {
             System.out.println("Emekli olabilirsin");
-        } else if (cinsiyet=='K' && yas<60) {
+        } else if (cinsiyet=='K' && yas<60 && yas>15) {
             System.out.println("Emekli olmak icin daha " + (60-yas) + " sene calismalisin");
+        }else{
+            System.out.println("gecersiz giris");
         }
 
     }
