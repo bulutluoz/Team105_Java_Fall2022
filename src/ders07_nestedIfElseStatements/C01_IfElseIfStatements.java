@@ -1,4 +1,4 @@
-package ders07_NestedIfElseStatements;
+package ders07_nestedIfElseStatements;
 
 import java.util.Scanner;
 

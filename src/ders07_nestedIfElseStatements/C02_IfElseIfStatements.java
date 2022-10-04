@@ -1,4 +1,4 @@
-package ders07_NestedIfElseStatements;
+package ders07_nestedIfElseStatements;
 
 public class C02_IfElseIfStatements {
     public static void main(String[] args) {
