@@ -119,3 +119,27 @@ public class C03_SifreKontrolu {
         }else return 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
