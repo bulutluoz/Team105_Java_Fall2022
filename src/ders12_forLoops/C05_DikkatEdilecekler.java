@@ -26,7 +26,7 @@ public class C05_DikkatEdilecekler {
         // kullanicinin verdigi bir sayinin asal sayi olup olmadigini bulun
         // asal sayi : 1 ve kendisi disinda hic bir tamsayiya tam bolunmeyen sayi
 
-        int sayi=5300;
+        int sayi=230;
         boolean bayrak=false;
 
         for (int i = 2; i <=sayi-1 ; i++) {
@@ -43,9 +43,9 @@ public class C05_DikkatEdilecekler {
 
 
         if (bayrak){
-            System.out.println("asal sayi");
-        }else {
             System.out.println("asal sayi degil");
+        }else {
+            System.out.println("asal sayi");
         }
     }
 }
