@@ -18,11 +18,13 @@ public class C08_MDA_Soru {
 
         for (int i = 0; i < arr.length; i++) { // outer array icindeki inner array'leri kontrol eder
             innerArrToplami=0;
+
             for (int j = 0; j < arr[i].length; j++) { // herbir inner array'in tum elementlerini kontrol eder
 
                 innerArrToplami += arr[i][j];
 
             }
+
             output[i]=innerArrToplami;
         }
 
