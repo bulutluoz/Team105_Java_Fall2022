@@ -16,5 +16,11 @@ public class C07_indexOf {
             sayilar.add(arr[i]);
         }
 
+
+        System.out.println(sayilar.indexOf(2)); // 1
+
+        System.out.println(sayilar.indexOf(5)); // 4
+
+        System.out.println(sayilar.lastIndexOf(5)); // 15
     }
 }
