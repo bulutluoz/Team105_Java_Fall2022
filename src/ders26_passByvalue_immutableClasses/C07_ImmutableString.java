@@ -18,5 +18,6 @@ public class C07_ImmutableString {
 
         eski obje bosa cikar ve garbage collector tarafindan silinmeyi bekler
          */
+
     }
 }
