@@ -1,5 +1,8 @@
 package ders39_abstractClass;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class DAbstractClass {
 
     DAbstractClass(){
@@ -18,5 +21,7 @@ public abstract class DAbstractClass {
        //  DAbstractClass obj = new DAbstractClass();
        // Abstract class'lar class olduklarindan constructor'lari vardir
        // Ancak obstract class'lardan obje olusturulamaz
+
+
     }
 }
