@@ -52,6 +52,11 @@ public class C03_LinkedListSoru {
 
 
     }
+
+
+
+
+
     public static void notListesineDegerEkle(){
 
         Scanner scan=new Scanner(System.in);
