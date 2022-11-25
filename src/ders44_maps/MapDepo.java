@@ -1,5 +1,6 @@
 package ders44_maps;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -53,5 +54,33 @@ public class MapDepo {
         }
 
         return ogrenciMap;
+    }
+
+    public static void subeOgrenciBilgileriniYazdir(Map<Integer, String> ogrenciMap, String subeAdi) {
+
+        Collection<String> valueCollection = ogrenciMap.values();
+        /*
+          [
+          Ali-Can-10-H-MF,
+          Veli-Cem-11-M-Soz,
+          Ali-Cem-11-H-TM,
+          Ayse-Can-10-H-MF,
+          Ayse-Cem-11-M-TM,
+          Fatma-Han-10-K-Soz
+          ]
+         */
+        System.out.println("Isim      Soyisim     Sinif");
+        System.out.println("===========================");
+        for (String eachValue:valueCollection
+             ) {
+            // value'yu parcalarina ayir
+            String[] valueArr=eachValue.split("-"); // [Ayse, Can, 10, H, MF]
+
+            // sube ismini kontrol et, istenen sube ise isim,soyisim,sinif yazdir
+            if (valueArr[3].equals(subeAdi)){
+
+                System.out.println(valueArr[0] + " " + valueArr[1] + " " + valueArr[2]);
+            }
+        }
     }
 }
