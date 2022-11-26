@@ -167,4 +167,36 @@ public class MapDepo {
         }
         return siraliOgrenciSeti;
     }
+
+    public static Map<Integer, String> soyisimleriBuyukharfYap(Map<Integer, String> ogrenciMapi) {
+
+
+
+
+
+
+
+        String istenen;
+        String value;
+        String[] valueArr;
+        // soyisimleri buyultmek icin once Entry set alalim
+        Set<Map.Entry<Integer,String>> ogrenciEntrySeti =ogrenciMapi.entrySet();
+        // entrySet'deki herbir entry'deki value'yu alalim
+        for (Map.Entry<Integer,String> eachEntry: ogrenciEntrySeti
+             ) {
+            value=eachEntry.getValue();
+            // value'yu split yapip array'e cevirelim
+            valueArr=value.split("-"); // [Ayse, Can, 10, H, MF]
+            // array'de istedigimiz degisikligi yapalim
+            valueArr[1] = valueArr[1].toUpperCase();
+            // array'deki yeni bilgileri birlestirip eachEntry.setvalue(yeniValue)
+            eachEntry.setValue(valueArr[0]+"-"+
+                                valueArr[1]+"-"+
+                                valueArr[2]+"-"+
+                                valueArr[3]+"-"+
+                                valueArr[4]);
+        }
+
+        return ogrenciMapi;
+    }
 }
