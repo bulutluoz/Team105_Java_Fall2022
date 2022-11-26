@@ -10,10 +10,6 @@ public class C01_EntrySet {
 
     public static void main(String[] args) {
 
-        // Ogrenci map'inde sirali olarak
-        // tum ogrencilerin
-        // bolum, sinif, sube, isim, soyisim ve numaralarini yazdirin
-
         // onceki iki derste key(Set) ve value(Collection) degerlerini toplu olarak alabiliyorduk
         // ancak key ve value birlikte kullanmak istedigimizde
         // bu islemi yapmak zor olur
@@ -24,6 +20,8 @@ public class C01_EntrySet {
         Map <Integer,String> ogrenciMap= MapDepo.ornekMapOlustur();
         System.out.println(ogrenciMap);
         System.out.println(ogrenciMap.size()); // 6
+
+        ogrenciMap.put(108, "Mehmet-Erkan-12-K-MF");
 
         /*
             {
